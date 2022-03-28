@@ -1,13 +1,16 @@
+
 ## API Endpoints
 
+### Database File :- https://github.com/esteplogic/feature/raw/test-task/pl-cakephp-test.sql 
 
-## http://test-task.local/api/contacts/index
-# Request Type :- GET
-# page=2
-# offset = 2
-# limit = 5
+### http://test-task.local/api/contacts/index
+### Request Type :- GET
+### page=2
+### offset = 2
+### limit = 5
 
-`[
+```
+[
     {
         "id": 6,
         "first_name": "Stoddard",
@@ -38,15 +41,17 @@
         "last_name": "Gaddas",
         "phone_number": "6413457727"
     }
-]`
+]
+```
 
 
-## http://test-task.local/api/contacts/index_ext
-# Request Type :- GET
-# page = 2
-# offset = 2
-# limit = 5
-`[
+### http://test-task.local/api/contacts/index_ext
+### Request Type :- GET
+#### page = 2
+#### offset = 2
+#### limit = 5
+```
+[
     {
         "id": 1,
         "first_name": "Leeland",
@@ -102,27 +107,33 @@
             "phone_number": "6221971574"
         }
     }
-]`
+]
+```
 
 
-## http://test-task.local/api/contacts
-# Request Type :- POST
+### http://test-task.local/api/contacts
+## Request Type :- POST
 ## header 
-# Content-Type:application/json
-# Accept:application/json
+#### Content-Type:application/json
+####  Accept:application/json
 
-`{
+```
+{
     "status": "success",
     "message": "Contacts successfully created"
-}`
+}
+```
 
-`{
+```
+{
     "status": "failed",
     "message": "Failed to save data"
-}`
+}
+```
 
 
-`{ 
+```
+{ 
 	"first_name":"Leeland",
 	"last_name":"Josipovitz",
 	"phone_number":"5741394097",
@@ -132,4 +143,5 @@
 	"add_notes":"Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
 	"internal_notes":"Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
 	"comments":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum"
-}`
+}
+```
